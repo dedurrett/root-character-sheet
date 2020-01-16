@@ -1,0 +1,177 @@
+.charsheet {
+    width: 842px !important;
+    margin: 0 auto !important;
+}
+div.sheet-p1info {
+	display: none;
+}
+ div.sheet-p2info {
+	display: none;
+}
+ input.sheet-p2:not([value='1']) ~ div.sheet-p1info {
+	display: block;
+}
+ input.sheet-p2:not([value='0']) ~ div.sheet-p2info {
+	display: block;
+}
+ input.sheet-p2 {
+	width: 30%;
+	height: 45px;
+	cursor: pointer;
+	position: relative;
+	opacity: 0;
+	z-index: 9999;
+}
+ span.sheet-p2tab::before {
+	content: "Root";
+}
+ span.sheet-p2tab {
+	text-align: center;
+	display: inline-block;
+	width: 30%;
+	height: 45px;
+	font-size: 36px;
+	background: #65763c;
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+	margin-left: -30%
+}
+ input.sheet-p2:checked + span.sheet-p2tab {
+	background: #93537c;
+	color: white;
+	border-radius: 4px;
+}
+
+input.sheet-filler[type="radio"]
+{
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+/* Fake radio */
+input[type="radio"] + span::before
+{
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+}
+input.sheet-filler[type="radio"] + span::before
+{
+    content: "";
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+input.sheet-zero[type="radio"] + span::before
+{
+    content: "0" !important;
+}
+input.sheet-filler[type="radio"] + span::before
+{
+    content: "●";
+}
+/* Remove dot from all radios _after_ selected one */
+input.sheet-filler[type="radio"]:checked ~ input.sheet-filler[type="radio"] + span::before
+{    
+    content: "";
+}
+
+
+span.sheet-square {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+div.sheet-square {
+	display: inline-block;
+	border: 4px solid #65763c;
+	height: 100px;
+	margin: 5px;
+	width: 100px;
+}
+
+div.sheet-square input[type="number"] {
+	border    : none;
+	font-size : 4em;
+	height    : 80%;
+	text-align: center;
+	width     : 100%;
+}
+
+.sheet-1col {
+    float: left;
+    width: 100%;
+}
+.sheet-2col {
+    float: left;
+    width: 50%;
+}
+
+.sheet-2colright {
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+
+.sheet-fieldtitle {
+    display: block;
+}
+
+.sheet-largetextarea {
+    width: 90%;
+    height: 10em;
+}
+
+.sheet-mediumtextarea {
+    width: 90%;
+    height: 4em;
+}
+
+.sheet-box {
+    box-sizing: border-box;
+    margin: .5em;
+    padding: .5em;
+    border-style: solid;
+    border-width: thin;
+    border-radius: .5em;
+}
+.sheet-widebox {
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em;
+    border-style: solid;
+    border-width: thin;
+    border-radius: .5em;
+}
+
+.sheet-box input[type="text"] {
+    width: 90%;
+}
