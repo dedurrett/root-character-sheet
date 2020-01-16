@@ -1,0 +1,350 @@
+<div>
+    <div class="sheet-2col">
+        <div>
+            <input class="sheet-p2" type="checkbox" name="attr_p2" value="1"><span class="sheet-p2tab"></span>
+        </div>
+    </div>
+    <div class="sheet-2col">
+        <div>
+            <input type="text" name="attr_character_name" style="width: 150px;" placeholder="Character Name"/>
+            <SELECT name="attr_character_playbook" style="width: 120px;">
+                <OPTION value=""></OPTION>
+                <OPTION value="ADVENTURER">the Adventurer</OPTION>
+                <OPTION value="ARBITER">the Arbiter</OPTION>
+                <OPTION value="HARRIER">the Harrier</OPTION>
+                <OPTION value="RANGER">the Ranger</OPTION>
+                <OPTION value="SCOUNDREL">the Scoundrel</OPTION>
+                <OPTION value="THIEF">the Thief</OPTION>
+                <OPTION value="TINKER">the Tinker</OPTION>
+                <OPTION value="VAGRANT">the Vagrant</OPTION>
+                <OPTION value="CHAMPION">the Champion</OPTION>
+                <OPTION value="CHRONICLER">the Chronicler</OPTION>
+                <OPTION value="ENVOY">the Envoy</OPTION>
+                <OPTION value="EXILE">the Exile</OPTION>
+                <OPTION value="HERETIC">the Heretic</OPTION>
+                <OPTION value="PIRATE">the Pirate</OPTION>
+                <OPTION value="PRINCE">the Prince</OPTION>
+                <OPTION value="RACONTEUR">the Raconteur</OPTION>
+                <OPTION value="RAIDER">the Raider</OPTION>
+                <OPTION value="SEEKER">the Seeker</OPTION>
+            </SELECT>
+        </div>
+    </div>
+</div>
+&nbsp;<div></div><br/>
+<input class="sheet-p2" type="hidden" name="attr_p2" value="1">
+<div class="sheet-p1info">
+    <div class="sheet-2col">
+        <div class="sheet-box">
+            <h2 class="sheet-sectiontitle">Your Character</h2>
+            <h3 class="sheet-fieldtitle">You Species:</h3>
+            <input type="text" name="attr_char_species" placeholder="fox, mouse, rabbit, bird, cat, etc."/>
+            <h3 class="sheet-fieldtitle">Your Look:</h3>
+            <input type="text" name="attr_char_look1" placeholder="male, female, ambiguous, androgynous"/>
+            <h3 class="sheet-fieldtitle">Your Look:</h3>
+            <input type="text" name="attr_char_look2" placeholder="a physical feature"/>
+            <h3 class="sheet-fieldtitle">Your look:</h3>
+            <input type="text" name="attr_char_look3" placeholder="a notable trinket or article of clothing"/>
+            <h3 class="sheet-fieldtitle">Your Demeanor:</h3>
+            <input type="text" name="attr_char_demeanor" placeholder="behavior or bearing"/>
+        </div>
+    </div>
+    <div class="sheet-2col">
+        <div class="sheet-box">
+            <h2 class="sheet-sectiontitle">Your Background</h2>
+            <h3 class="sheet-fieldtitle">Where do you call home?</h3>
+            <input type="text" name="attr_bg_home" placeholder="a clearing, the forest, far away?"/>
+            <h3 class="sheet-fieldtitle">Why did you become a vagabond?</h3>
+            <input type="text" name="attr_bg_reason" placeholder="wanderlust, to escape, exile?"/>
+            <h3 class="sheet-fieldtitle">Whom have you left behind?</h3>
+            <input type="text" name="attr_bg_left" placeholder="a friend, a loved one, a family?"/>
+            <h3 class="sheet-fieldtitle">Which faction have you served the most?</h3>
+            <input type="text" name="attr_bg_ally" placeholder="the Eyrie Dynasty, the Marquisate, the Denizens, noone?"/>
+            <h3 class="sheet-fieldtitle">Which faction have you worked against?</h3>
+            <input type="text" name="attr_bg_enemy" placeholder="the Eyrie Dynasty, the Marquisate, the Denizens, noone?"/>
+        </div>
+    </div>
+</div>&nbsp;
+<div class="sheet-p1info">
+    <div class"sheet-box">
+        <h2 class="sheet-sectiontitle">Connections</h2>
+        <input type="hidden" name="attr_conn1_text1" value=""/>
+        <input type="hidden" name="attr_conn1_text2" value=""/>
+        <input type="hidden" name="attr_conn1_text3" value=""/>
+        <input type="hidden" name="attr_conn2_text1" value=""/>
+        <input type="hidden" name="attr_conn2_text2" value=""/>
+        <input type="hidden" name="attr_conn2_text3" value=""/>
+        <div>
+            <span name="attr_conn1_text1"></span>
+            <input type="text" name="attr_conn1_ally" style="width: 150px;"/>
+            <span name="attr_conn1_text2"></span>
+            <div>
+                <span name="attr_conn1_text3"></span>
+            </div>
+        </div>
+        <br/>
+        <div>
+            <span name="attr_conn2_text1"></span>
+            <input type="text" name="attr_conn2_ally" style="width: 150px;"/>
+            <span name="attr_conn2_text2"></span>
+            <div>
+                <span name="attr_conn2_text3"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="sheet-p2info">
+        <div class="sheet-2col">
+            <div class="sheet-box">
+                <div class="square">
+					<span class="square">CHARM</span>
+					<input name="attr_charm" placeholder="0" type="number" value="" />
+				</div>
+				<div class="square">
+					CUNNING
+					<input name="attr_cunning" placeholder="0" type="number" value="" />
+				</div>
+				<div class="square">
+					FINESSE
+					<input name="attr_finesse" placeholder="0" type="number" value="" />
+				</div>
+				<div class="square">
+					LUCK
+					<input name="attr_luck" placeholder="0" type="number" value="" />
+				</div>
+				<div class="square">
+					MIGHT
+					<input name="attr_might" placeholder="0" type="number" value="" />
+				</div>
+            </div>
+        </div>
+        <div class="sheet-2col">
+            <div class="sheet-box">
+                <div>
+                    <h3 class="sheet-fieldtitle">Injury</h3>
+                    <input class="sheet-filler sheet-zero" type="radio" name="attr_injury" value=0 checked><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_injury" value=1><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_injury" value=2><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_injury" value=3><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_injury" value=4><span></span>
+                </div>
+                <div>
+                    <h3 class="sheet-fieldtitle">Exhaustion</h3>
+                    <input class="sheet-filler sheet-zero" type="radio" name="attr_exhaustion" value=0 checked><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_exhaustion" value=1><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_exhaustion" value=2><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_exhaustion" value=3><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_exhaustion" value=4><span></span>
+                </div>
+                <div>
+                    <h3 class="sheet-fieldtitle">Decay</h3>
+                    <input class="sheet-filler sheet-zero" type="radio" name="attr_decay" value=0 checked><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_decay" value=1><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_decay" value=2><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_decay" value=3><span></span>
+                    <input class="sheet-filler" type="radio" name="attr_decay" value=4><span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <h2 class="sheet-sectiontitle">Notes</h2>
+    <textarea class="sheet-largetextarea"></textarea> -->
+
+<script type="text/worker">
+// Connections
+on('change:character_playbook', function() {
+    getAttrs(["character_playbook"], function(values) {
+        switch (values.character_playbook.toUpperCase()) {
+            case "ADVENTURER":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "ARBITER":
+                setAttrs({
+                    conn1_text1:"PROTECTOR: I once protected",
+                    conn1_text2:"from a mortal blow during a fight, and I would do it again. Why?",
+                    conn1_text3:"When they are in reach, mark exhaustion to take a blow meant for them. If you do, take +1 ongoing to weapon moves for the rest of the scene.",
+                    conn2_text1:"PARTNER:",
+                    conn2_text2:"and I together helped a faction take control of a clearing, and share responsibility for it.",
+                    conn2_text3:"You each mark 2 prestige with the faction you helped, and mark 2 notoriety with the faction you harmed. If you are spotted together, then any prestige or notoriety gains with those factions are doubled for the two of you."
+                });
+                break;
+            case "HARRIER":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "RANGER":
+                setAttrs({
+                    conn1_text1:"WATCHER: I felt betrayed by something",
+                    conn1_text2:"once did to me. I won’t easily trust them ever again.",
+                    conn1_text3:"When you figure them out, you can always ask “Are you telling the truth?”, even on a miss.",
+                    conn2_text1:"PROTECTOR: I did something that would have gotten me the enmity of a Woodland faction—if",
+                    conn2_text2:"hadn’t covered for me. What did I do? Why and how did they protect me? Regardless, I feel indebted to them.",
+                    conn2_text3:"When they are in reach, mark exhaustion to take a blow meant for them. If you do, take +1 ongoing to weapon moves for the rest of the scene."
+                });
+                break;
+            case "SCOUNDREL":
+                setAttrs({
+                    conn1_text1:"FRIEND:",
+                    conn1_text2:"and I once met and pulled off a mad, impossible stunt together. What did we do? Why?",
+                    conn1_text3:"When you help them, you can mark two exhaustion to give a +2, instead of one exhaustion for a +1.",
+                    conn2_text1:"PARTNER:",
+                    conn2_text2:"and I destroyed a faction’s resource, on behalf of an opposing faction. Why?",
+                    conn2_text3:"You each mark 2 prestige with the faction you helped, and mark 2 notoriety with the faction you harmed. If you are spotted together, then any prestige or notoriety gains with those factions are doubled for the two of you."
+                });
+                break;
+            case "THIEF":
+                setAttrs({
+                    conn1_text1:"PROFESSIONAL: I stole something important, something needed or craved, for",
+                    conn1_text2:". I proved my worth to them.",
+                    conn1_text3:"If you share information with them after reading a tense situation, you both benefit from the +1 for acting on the answers. If you help them while they are attempting roguish feats, you gain choices on the help move as if you had marked two exhaustion when you mark one.",
+                    conn2_text1:"FRIEND:",
+                    conn2_text2:"sprang to get me out of holding, whether they bailed me out or rescued me. I owe them.",
+                    conn2_text3:"When you help them, you can mark two exhaustion to give a +2, instead of one exhaustion for a +1."
+                });
+                break;
+            case "TINKER":
+                setAttrs({
+                    conn1_text1:"PROFESSIONAL:",
+                    conn1_text2:"and I have been working together well for a while. We read each other’s moves easily.",
+                    conn1_text3:"If you share information with them after reading a tense situation, you both benefit from the +1 for acting on the answers. If you help them while they are attempting roguish feats, you gain choices on the help move as if you had marked two exhaustion when you mark one.",
+                    conn2_text1:"FAMILY:",
+                    conn2_text2:"and I had each other’s back when we were run out of a clearing because our natures got out of hand.",
+                    conn2_text3:"When you help them fulfill their nature, you both clear your exhaustion track."
+                });
+                break;
+            case "VAGRANT":
+                setAttrs({
+                    conn1_text1:"FAMILY: After",
+                    conn1_text2:"and I pulled off an impressive heist and stole something very valuable from a powerful faction, my bad choices landed me in dire straits. But they bailed me out, and we’ve been close ever since.",
+                    conn1_text3:"When you help them fulfill their nature, you both clear your exhaustion track.",
+                    conn2_text1:"WATCHER:",
+                    conn2_text2:"saw through one of my cons, and turned it back on me. How? Why did we forgive each other?",
+                    conn2_text3:"When you figure them out, you can always ask “Are you telling the truth?”, even on a miss."
+                });
+                break;
+            case "CHAMPION":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "CHRONICLER":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "ENVOY":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "EXILE":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "HERETIC":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "PIRATE":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "PRINCE":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "RACONTEUR":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "RAIDER":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            case "SEEKER":
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+                break;
+            default: 
+                setAttrs({
+                    conn1_text1:"",
+                    conn1_text2:"",
+                    conn1_text3:"",
+                    conn2_text1:"",
+                    conn2_text2:"",
+                    conn2_text3:""
+                });
+        }
+    });
+});
+</script>
